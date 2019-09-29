@@ -8,7 +8,7 @@ function setup() {
 
 function draw() {
   colorMode(HSB);
-  stroke(263, 23, 69, 30);
+  stroke(255);
 
   //background(216,191,216);
   // noStroke();
@@ -20,12 +20,13 @@ function draw() {
 
   // draw puff of smoke
   // fades darker as it gets closer to 0
-  fill(y);
+  fill(random(310), 13, 78);
   translate(x, y);
   rotate(r);
   rect(-5, -5, 20, 20);
   rect(0, 7, 10, 10);
   rect(0, 1, 30, 30);
+  rect(10, 10, 5, 5)
 
   // up 3 pixels
   y -= 1;
