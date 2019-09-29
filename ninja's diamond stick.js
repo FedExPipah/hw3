@@ -1,6 +1,6 @@
-var x = 200;
-var y = 200;
-var r = 10;
+var x = 300;
+var y = 300;
+var r = 100;
 
 function setup() {
   createCanvas(400, 400);
@@ -25,9 +25,10 @@ function draw() {
   rotate(r);
   rect(-5, -5, 20, 20);
   rect(0, 7, 10, 10);
+  rect(0, 1, 30, 30);
 
   // up 3 pixels
-  y -= 2;
+  y -= 1;
 
 
   // rotate 0.05 radians, which is about 2.8 degrees
