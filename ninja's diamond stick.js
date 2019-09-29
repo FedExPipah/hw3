@@ -10,16 +10,6 @@ function draw() {
   colorMode(HSB);
   stroke(255);
 
-  //background(216,191,216);
-  // noStroke();
-
-  // draw smokestack
-  //  fill(255);
-  //rect(195, height, 30, -50);
-
-
-  // draw puff of smoke
-  // fades darker as it gets closer to 0
   fill(random(310), 13, 78);
   translate(x, y);
   rotate(r);
@@ -28,14 +18,9 @@ function draw() {
   rect(0, 1, 30, 30);
   rect(10, 10, 5, 5)
 
-  // up 3 pixels
   y -= 1;
-
-
-  // rotate 0.05 radians, which is about 2.8 degrees
   r += 200
 
-  // if reach past the top a bunch
   if (y < -100) {
     y = 400;
   }
