@@ -24,6 +24,7 @@ function draw() {
   translate(x, y);
   rotate(r);
   rect(-5, -5, 20, 20);
+  rect(0, 7, 10, 10);
 
   // up 3 pixels
   y -= 2;
